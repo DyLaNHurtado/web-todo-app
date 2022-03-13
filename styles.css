@@ -119,11 +119,15 @@ ul{
     color: #191a1b;
 }
 /* CONTENT*/
-.content{
+.container{
+    position: relative;
     margin: 5vh 5vw;
     padding: 3vh 5vw;
+}
+.content{
+    margin-top: 3em;
     display: block;
-    position: relative;
+    position: absolute;
     justify-content: center;
     color: #ece8e2;
     font-size: 20px;
