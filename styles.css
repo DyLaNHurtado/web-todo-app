@@ -40,6 +40,11 @@ h1{
 }
 
 .nav-main ul :hover{
+    border-bottom: 5px solid #ece8e2;
+    font-weight: bold;
+    color: #ece8e2;
+}
+.nav-main ul .li.active{
     border-bottom: 5px solid #2fee6f;
     font-weight: bold;
     color: #2fee6f;
