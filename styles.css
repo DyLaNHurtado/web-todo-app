@@ -1,0 +1,60 @@
+h1{
+    text-align: center;
+}
+
+.nav-main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25em 0;
+    justify-content: center;
+}
+.nav-main ul{
+    display: flex;
+    justify-content: center;
+    padding: 1.5vh 0;
+}
+
+.nav-main ul li{
+    padding: 1.5vh 5vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-bottom: 5px solid gray;
+    
+}
+
+.nav-main ul :hover{
+    border-bottom: 5px solid aqua;
+}
+
+ul{
+    list-style: none
+}
+.add-input{
+    display: flex;
+    justify-content: center;
+}
+.add-input input{
+    min-width: 40vw;
+    padding: 1vh 0.5vw;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius:12px;
+}
+.button{
+    background-color: aqua;
+    padding: 1em 1.7em;
+    margin: 0 0 0 2vw;
+    border-radius: 15%;
+}
+
+.button i{
+    font-size: 20px;
+}
+
+.content{
+    display: block;
+}
