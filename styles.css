@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
 body{
-    background-color: #191a1b;
+    background-color:  #313131;
     color: #ece8e2;
     font-size: 16px;
     font-family: 'Montserrat Alternates', sans-serif;
-    width: 100vw;
-    height: 100vh;
+    min-width: 95vw;
+    min-height: 95vw;
 }
 
 h1{
@@ -13,6 +13,15 @@ h1{
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
+.app{
+    background-color: #191a1b;
+    padding: 4vh 4vw;
+    margin:2vh 10vw;
+    min-width: 60vw;
+    min-height: 80vh;
+    border-radius: 54px;
+}
+
 /* NAV TABS*/
 .nav-main{
     width: 100%;

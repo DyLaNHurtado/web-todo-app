@@ -29,14 +29,12 @@ button.addEventListener('click',()=>{
     newTaskSpan.textContent=inputValue;
 
     if(inputValue.trim().length!=0){
-    newTask.appendChild(newTaskCV)
-    newTask.appendChild(newTaskSpan)
+    newTask.appendChild(newTaskCV);
+    newTask.appendChild(newTaskSpan);
     content.appendChild(newTask);
 
     document.body.insertBefore(addInputDiv,content);
     }else{
-        alert("Task name is empty")
-
+        alert("Task name is empty");
     }
-
 });
