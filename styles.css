@@ -111,5 +111,19 @@ ul{
 }
 /* CONTENT*/
 .content{
+    margin: 5vh 5vw;
+    padding: 3vh 5vw;
     display: block;
+    position: relative;
+    justify-content: center;
+    color: #ece8e2;
+    font-size: 20px;
+}
+.content input {
+    min-width: 2em;
+    min-height: 2em;
+  }
+
+.content input:checked + span   {
+    text-decoration: line-through;
 }
