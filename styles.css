@@ -1,7 +1,19 @@
-h1{
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+body{
+    background-color: #191a1b;
+    color: #ece8e2;
+    font-size: 16px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 100vw;
+    height: 100vh;
 }
 
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+/* NAV TABS*/
 .nav-main{
     width: 100%;
     display: flex;
@@ -17,44 +29,73 @@ h1{
 }
 
 .nav-main ul li{
+    font-size: 16px;
     padding: 1.5vh 5vw;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    border-bottom: 5px solid gray;
+    border-bottom: 3px solid gray;
     
 }
 
 .nav-main ul :hover{
-    border-bottom: 5px solid aqua;
+    border-bottom: 5px solid #2fee6f;
+    font-weight: bold;
+    color: #2fee6f;
 }
 
 ul{
     list-style: none
 }
+
+/* INPUT AND BUTTON*/
 .add-input{
     display: flex;
     justify-content: center;
 }
+
 .add-input input{
     min-width: 40vw;
     padding: 1vh 0.5vw;
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
     border-radius:12px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 100;
 }
+
+.add-input input:focus{
+    border: 4px solid black;
+    box-sizing: border-box;
+    border-radius:12px;
+    outline: 2px solid #2fee6f;
+    font-weight: bold;
+
+}
+.add-input input::selection{
+    background-color: #2fee6f;
+}
+
 .button{
-    background-color: aqua;
+    background-color: #2fee6f;
     padding: 1em 1.7em;
     margin: 0 0 0 2vw;
     border-radius: 15%;
 }
+.button:hover{
+    background-color: #96f1b4;
+}
+.button:active,.button:active i{
+    background-color: #2fee6f;
+    color: #ece8e2;
+}
 
 .button i{
     font-size: 20px;
+    color: #191a1b;
 }
-
+/* CONTENT*/
 .content{
     display: block;
 }
