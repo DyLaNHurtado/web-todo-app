@@ -1,14 +1,17 @@
 const tabs = document.querySelectorAll('.li');
 const addInputDiv = document.querySelector('.add-input');
-const content = document.querySelector('.content');
+const content = document.querySelectorAll('.content');
+const parent = document.querySelector('.container');
 
-//Tab selected
+//Tab and content selected
 tabs.forEach((e,i)=>{
     tabs[i].addEventListener('click',()=>{
-        tabs.forEach((e,i)=>{
+        tabs.forEach((e,j)=>{
             e.classList.remove("active")
+            content[j].classList.remove("active")
         });
         e.classList.add("active");
+        content[i].classList.add("active");
     });
 });
 
@@ -31,9 +34,13 @@ button.addEventListener('click',()=>{
     if(inputValue.trim().length!=0){
     newTask.appendChild(newTaskCV);
     newTask.appendChild(newTaskSpan);
-    content.appendChild(newTask);
-
-    document.body.insertBefore(addInputDiv,content);
+    newTask.classList.add("task");
+    var activeContent;
+    content.forEach((e,i)=>{
+        if(e.classList.length==2)
+        activeContent=e});
+    activeContent.appendChild(newTask);
+    document.getElementById("input").value="";
     }else{
         alert("Task name is empty");
     }
