@@ -20,13 +20,13 @@ let button=document.querySelector(".button");
 button.addEventListener('click',()=>{
     let inputValue = document.getElementById("input").value;
     let newTask = document.createElement("div");
-    newTask.classList.add("task");
 
     let newTaskCV = document.createElement("input");
     newTaskCV.setAttribute("type","checkbox");
     let identifier = document.querySelectorAll("input").length-1;
     newTaskCV.setAttribute("id",`cb${identifier}`);
     newTaskCV.setAttribute("value",`cb${identifier}`);
+    newTaskCV.setAttribute("class",`inputTask`);
 
     let newTaskSpan = document.createElement("span");
     newTaskSpan.textContent=inputValue;
@@ -34,7 +34,7 @@ button.addEventListener('click',()=>{
     if(inputValue.trim().length!=0){
     newTask.appendChild(newTaskCV);
     newTask.appendChild(newTaskSpan);
-    newTask.classList.add("task");
+    newTask.classList.add("tasks");
     var activeContent;
     content.forEach((e,i)=>{
         if(e.classList.length==2)
@@ -44,4 +44,15 @@ button.addEventListener('click',()=>{
     }else{
         alert("Task name is empty");
     }
+    //Set Tab active content
+    let tasks
+    let activeTab = document.getElementById("active");
+    tasks= document.querySelectorAll('.tasks');
+    if(tasks.length>=0){
+    for (const i of tasks) {
+        if(i.firstElementChild.checked){
+            activeTab.appendChild(i);
+        }
+    }}
 });
+

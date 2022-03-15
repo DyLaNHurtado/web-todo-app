@@ -135,12 +135,12 @@ ul{
     opacity: 100%;
     pointer-events: all;
 }
-.task input {
+.tasks input {
     min-width: 2em;
     min-height: 2em;
   }
 
-.task input:checked + span   {
+.tasks input:checked + span   {
     text-decoration: line-through;
     color: #96f1b4;
 }
